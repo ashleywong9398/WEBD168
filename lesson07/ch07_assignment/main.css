@@ -109,3 +109,56 @@ nav {
 .card-content {
     padding: 1.4em;
 }
+@media screen and (max-width: 1165px) {
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar li {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: calc(50% - 1em);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .navbar {
+        margin-bottom: 0.5em;
+    }
+    nav {
+        padding: 1em 0;
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar li {
+        flex: auto;
+        text-align: center;
+    }
+    .navbar li a {
+        padding: 0.5em 1em;
+    }
+    .masthead {
+        margin: 1em auto;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
