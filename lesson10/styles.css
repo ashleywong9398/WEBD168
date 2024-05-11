@@ -1,0 +1,147 @@
+body {
+    font-family:Georgia, serif;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #4e4a4a;
+    padding: 1rem;
+    text-align: left;
+}
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+#about {
+    background-color: #4e4a4a;
+    padding: 2rem;
+    text-align: center;
+    height: 84vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#about p {
+    color: #fff; 
+    font-size: 1.2rem;
+}
+#about h {
+    color: #fff; 
+    font-size: 3.5rem;
+}
+
+h1 {
+    text-align: left;
+    font-weight: normal;
+    margin: 0;
+    font-size: 1.3rem;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+    color: black;
+    margin-left: 10px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+img {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    height: 100px; 
+    width: 100px; 
+    border-radius: 50%; 
+    margin-bottom: 0.8rem; 
+}
+.transition-image {
+    opacity: 0.5;
+    transition: opacity 0.5s; 
+}
+
+.transition-image:hover {
+    opacity: 1;
+}
+
+.transition-image {
+    opacity: 0.5; 
+    transition: opacity 0.5s;
+}
+
+.transition-image:hover {
+    opacity: 1;
+    animation: move-left-right 0.5s alternate; 
+}
+
+@keyframes move-left-right {
+    0% {
+        transform: translateX(0); 
+    }
+    50% {
+        transform: translateX(-20px); 
+    }
+    100% {
+        transform: translateX(20px); 
+    }
+}
+
+footer {
+    background-color: #4e4a4a;
+    color: white;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    align-items: center;
+    text-align: center;
+}
+
+/* Add Snowflakes Animation */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.snowflake {
+    position: absolute;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+}
