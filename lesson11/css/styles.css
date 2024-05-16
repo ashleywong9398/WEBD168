@@ -4,33 +4,29 @@ body {
 	width: 85%;
 	margin: 1em auto 0;
 	font: 90%/1.5 Georgia, "Times New Roman", serif;
-	background-image: linear-gradient(to top, rgb(185, 219, 35), white);
+	background-image: linear-gradient(to top, lightblue, white);
   }
   h1 {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 2.8em;
 	font-weight: bold;
-	color: #a41c0a;
+	color: #0D1F59;
 	text-align: center;
   }
   button {
 	text-transform: uppercase;
-	background-color: rgb(5, 119, 62);
+	background-color: rgb(18, 141, 179);
 	padding: 7px;
 	border: none;
 	border-radius: 5px;
 	margin: 3px;
 	width: 150px;
 	cursor: pointer;
+	font-weight: bold;
   }
   button:hover {
 	background-color: #24346d;
   }
-  /* .buttons {
-	padding-bottom: 50px;
-	display: flex;
-	justify-content: center;
-  } */
   .buttons {
 	display: flex;
 	flex-direction: column;
@@ -128,7 +124,7 @@ body {
 	  height: auto;
 	}
 	button {
-	  background-color: rgb(166, 143, 218);
+	  background-color: lightblue;
 	}
 	.buttons {
 	  flex-direction: row;
