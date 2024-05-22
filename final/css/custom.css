@@ -1,0 +1,146 @@
+caption {
+  caption-side: top;
+}
+#title {
+  background-color: #4e4a4a;
+  padding: 2rem;
+  text-align: center;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#title p {
+  font-family: Georgia, serif;
+  color: #fff; 
+  font-size: 1.2rem;
+}
+#title h {
+  font-family: Georgia, serif;
+  color: #fff; 
+  font-size: 3.5rem;
+}
+img {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: 100px; 
+  width: 100px; 
+  border-radius: 50%; 
+  margin-bottom: 0.8rem; 
+}
+.transition-image {
+  opacity: 0.5;
+  transition: opacity 0.5s; 
+}
+
+.transition-image:hover {
+  opacity: 1;
+}
+
+.transition-image {
+  opacity: 0.5; 
+  transition: opacity 0.5s;
+}
+
+.transition-image:hover {
+  opacity: 1;
+  animation: move-left-right 0.5s alternate; 
+}
+.navbar-brand {
+  font-family: Georgia, serif; 
+}
+.nav-item{
+  font-family: Georgia, serif; 
+}
+.bg-dark-custom {
+  background-color: #4e4a4a !important;;
+}
+
+.bg-dark{
+  background-color: #4e4a4a !important;;
+}
+.navbar {
+  background-color: #4e4a4a !important; 
+}
+
+
+@keyframes move-left-right {
+  0% {
+      transform: translateX(0); 
+  }
+  50% {
+      transform: translateX(-20px); 
+  }
+  100% {
+      transform: translateX(20px); 
+  }
+}
+/* Add Snowflakes Animation */
+.snowflakes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.snowflake {
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+  0% {
+      transform: translateY(-100%);
+  }
+
+  100% {
+      transform: translateY(100vh);
+  }
+}
+.table caption {
+  caption-side: top;
+  text-align: right;
+}
+
+.table-dark {
+  --bs-table-bg: #4e4a4a;
+}
+
+strong {
+  color: #4e4a4a;
+}
+
+#about .lead {
+  color: #2e2c2c;
+}
+
+#about .bg-light {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.bi-star-fill.text-primary {
+  color: #5f1111 !important;
+}
+.btn.btn-primary {
+  background-color: #4e4a4a;
+  border-color: #4e4a4a;
+}
+table.table {
+  border: 2px solid #dee2e6;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}/*# sourceMappingURL=custom.css.map */
